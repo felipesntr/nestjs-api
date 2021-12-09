@@ -1,0 +1,28 @@
+GET http://localhost:3000/orders
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "amount": 32.55,
+    "credit_card_name": "jose santos",
+    "credit_card_number": "81273712637162783"
+}
+
+###
+GET http://localhost:3000/orders/2c100bd2-e8d7-4be1-8f70-a18e79e7cee2
+
+###
+PATCH http://localhost:3000/orders/2c100bd2-e8d7-4be1-8f70-a18e79e7cee2
+Content-Type: application/json
+
+{
+    "amount": 55.55,
+    "credit_card_name": "jose santos",
+    "credit_card_number": "81273712637162783"
+}
+
+###
+DELETE http://localhost:3000/orders/2c100bd2-e8d7-4be1-8f70-a18e79e7cee2
+
